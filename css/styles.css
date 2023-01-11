@@ -364,17 +364,10 @@ img {
   padding-bottom: 120px;
 }
 
-.svg-list {
-  display: flex;
-  gap: 24px;
-}
-.list-svg{
-  width: calc((100%-72px) / 4);
-}
+
 
 .svg-item {
   display: flex;
-
   align-items: center;
   justify-content: center;
   height: 112px;
@@ -470,6 +463,7 @@ img {
   margin-bottom: 72px;
   padding-left: 0;
 }
+
 .list-headlines {
   font-weight: 600;
   font-size: 20px;
