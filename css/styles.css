@@ -42,19 +42,12 @@ p {
 }
 
 .list-element {
-  position: relative;
-
   overflow: hidden;
   display: block;
   max-width: 100%;
   height: auto;
 }
-.list-element:hover .overlay{
-  transform: translateY(0);
-}
-.cardss{
-  
-}
+
 
 .cards {
   display: block;
@@ -65,34 +58,44 @@ p {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.overlay{
+.overlay {
+  position: relative;
+  overflow: hidden;
+ 
+}
+.about-overlay {
   position: absolute;
+
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 
-  background-color: #4D5AE5;
-}
-.overlay >p{
+
   padding-top: 40px;
   padding-right: 32px;
   padding-left: 32px;
-
   font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-/* or 150% */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+    
 
-letter-spacing: 0.02em;
+ 
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-/* CLOUD */
-
-color: #F4F4FD;
+  background-color: #4d5ae5;
 }
+.cards:hover .about-overlay,
+.cards:focus .about-overlay{
+  transform: translateY(0);
+  
+}
+
+
+
 
 
 .borders {
@@ -242,9 +245,28 @@ color: #F4F4FD;
   padding-bottom: 24px;
   display: inline-block;
 }
-
-
-
+.header-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  position: relative;
+}
+.header-link.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #404bbf;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+}
+.header-link:hover,
+:focus {
+  color: var(--secondary-button-color);
+}
 
 .header-list {
   display: flex;
@@ -320,22 +342,11 @@ img {
   color: var(--secondary-text-color);
 }
 
-.header-link {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
 .header-navigation {
   display: flex;
   align-items: center;
 }
 
-.header-link:hover,
-:focus {
-  color: var(--secondary-button-color);
-}
 .header-mail {
   font-weight: 400;
   font-size: 16px;
