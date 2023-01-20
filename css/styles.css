@@ -198,16 +198,10 @@ p {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
-  
-
-
 }
 .customers-icon {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-  
 }
 .customers-link:hover .customers-icon {
   fill: #404bbf;
@@ -491,11 +485,11 @@ img {
   padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
-  transition: background-color,color,border-color,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, color, border-color,
+  box-shadow,250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
-.button:focus
- {
+.button:focus {
   background-color: var(--secondary-button-color);
   color: var(--white-color);
   border-color: #404bbf;
@@ -506,7 +500,6 @@ img {
   position: fixed;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
-
 
   top: 0;
   left: 0;
@@ -526,7 +519,6 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
   width: 408px;
   height: 576px;
   background-color: #fff;
@@ -545,12 +537,10 @@ img {
   justify-content: center;
   cursor: pointer;
   color: #000000;
-
 }
 .close-svg {
   fill: currentColor;
-  transition: background-color,fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
-
+  transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close:hover .close-svg {
   fill: #fff;
@@ -705,7 +695,6 @@ img {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .ftr-soc-link:hover {
